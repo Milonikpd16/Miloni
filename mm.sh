@@ -1,4 +1,4 @@
 a=1
 echo "$a"
-b=2
+b=3
 echo "$b"
