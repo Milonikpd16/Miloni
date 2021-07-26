@@ -1,0 +1,18 @@
+---
+- hosts: all
+  name: add users and groups
+  tasks:
+  - name: add group
+    group:
+      name: Automation
+      state: present
+  - name: add user1
+    user:
+      name: testuser1
+      state: present
+      group: Automation
+  - name: add user2
+    user:
+      name: testuser2
+      state: present
+      group: Automation
